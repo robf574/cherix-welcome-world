@@ -12,12 +12,12 @@ const ContactInfo = ({ icon: Icon, title, content }: {
   content: string | React.ReactNode
 }) => (
   <div className="flex items-start">
-    <div className="mr-4 p-2 bg-accent-green/10 rounded-full">
-      <Icon className="text-accent-green h-5 w-5" />
+    <div className="mr-4 p-2 bg-white/20 rounded-full">
+      <Icon className="text-white h-5 w-5" />
     </div>
     <div>
-      <h4 className="font-medium text-gray-900">{title}</h4>
-      <div className="text-gray-600">{content}</div>
+      <h4 className="font-medium text-white">{title}</h4>
+      <div className="text-white/80">{content}</div>
     </div>
   </div>
 );
@@ -61,27 +61,27 @@ const Contact = () => {
     <section id="contact" className="section-padding">
       <div className="container mx-auto">
         <div className="text-center mb-16">
-          <h2 className="text-3xl md:text-4xl font-bold mb-4">
+          <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Get in <span className="gradient-text">Touch</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-white/90 max-w-2xl mx-auto">
             Have questions or ready to get started? Reach out to our team.
           </p>
         </div>
         
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-16">
           <div>
-            <h3 className="text-2xl font-bold mb-6">Contact Information</h3>
+            <h3 className="text-2xl font-bold text-white mb-6">Contact Information</h3>
             <div className="space-y-6 mb-8">
               <ContactInfo 
                 icon={Mail}
                 title="Email"
-                content={<a href="mailto:info@cherix.com" className="hover:text-core-red">info@cherix.com</a>}
+                content={<a href="mailto:info@cherix.com" className="hover:text-white/70">info@cherix.com</a>}
               />
               <ContactInfo 
                 icon={Phone}
                 title="Phone"
-                content={<a href="tel:+12345678901" className="hover:text-core-red">+1 (234) 567-8901</a>}
+                content={<a href="tel:+12345678901" className="hover:text-white/70">+1 (234) 567-8901</a>}
               />
               <ContactInfo 
                 icon={MapPin}
@@ -93,9 +93,9 @@ const Contact = () => {
               />
             </div>
             
-            <div className="bg-accent-green/10 p-6 rounded-lg">
-              <h4 className="font-bold mb-2">Business Hours</h4>
-              <p className="text-gray-700">
+            <div className="bg-white/10 p-6 rounded-lg">
+              <h4 className="font-bold text-white mb-2">Business Hours</h4>
+              <p className="text-white/80">
                 Monday - Friday: 9AM - 6PM<br />
                 Saturday: 10AM - 4PM<br />
                 Sunday: Closed
@@ -103,10 +103,10 @@ const Contact = () => {
             </div>
           </div>
           
-          <div>
+          <div className="bg-white/10 p-8 rounded-xl border border-white/20">
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
-                <label htmlFor="name" className="block text-sm font-medium mb-1">
+                <label htmlFor="name" className="block text-sm font-medium text-white mb-1">
                   Full Name
                 </label>
                 <Input
@@ -116,12 +116,12 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="Your name"
                   required
-                  className="w-full"
+                  className="w-full bg-white/20 border-white/30 placeholder:text-white/50 text-white"
                 />
               </div>
               
               <div>
-                <label htmlFor="email" className="block text-sm font-medium mb-1">
+                <label htmlFor="email" className="block text-sm font-medium text-white mb-1">
                   Email Address
                 </label>
                 <Input
@@ -132,12 +132,12 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="your.email@example.com"
                   required
-                  className="w-full"
+                  className="w-full bg-white/20 border-white/30 placeholder:text-white/50 text-white"
                 />
               </div>
               
               <div>
-                <label htmlFor="message" className="block text-sm font-medium mb-1">
+                <label htmlFor="message" className="block text-sm font-medium text-white mb-1">
                   Message
                 </label>
                 <Textarea
@@ -147,13 +147,13 @@ const Contact = () => {
                   onChange={handleChange}
                   placeholder="How can we help you?"
                   required
-                  className="min-h-[120px] w-full"
+                  className="min-h-[120px] w-full bg-white/20 border-white/30 placeholder:text-white/50 text-white"
                 />
               </div>
               
               <Button 
                 type="submit" 
-                className="w-full bg-core-red hover:bg-secondary-red"
+                className="w-full bg-white hover:bg-white/90 text-core-red"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}

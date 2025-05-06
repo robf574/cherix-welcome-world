@@ -1,4 +1,3 @@
-
 import { Check, Star, Users, Code } from "lucide-react";
 
 const FeatureCard = ({ icon: Icon, title, description }: { 
@@ -40,13 +39,13 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="section-padding bg-gray-50">
+    <section id="features" className="section-padding">
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             Features Designed for <span className="gradient-text">Success</span>
           </h2>
-          <p className="text-lg text-gray-600 max-w-2xl mx-auto">
+          <p className="text-lg text-white/90 max-w-2xl mx-auto">
             CheriX provides the tools and features you need to excel in today's competitive digital landscape.
           </p>
         </div>

@@ -5,8 +5,8 @@
 
 @layer base {
   :root {
-    --background: 0 0% 100%;
-    --foreground: 0 0% 0%;
+    --background: 347 83% 53%;
+    --foreground: 0 0% 100%;
 
     --card: 0 0% 100%;
     --card-foreground: 0 0% 0%;
@@ -50,7 +50,7 @@
   }
   
   .gradient-text {
-    @apply bg-gradient-to-r from-primary to-secondary bg-clip-text text-transparent;
+    @apply bg-gradient-to-r from-white to-gray-300 bg-clip-text text-transparent;
   }
 }
 
