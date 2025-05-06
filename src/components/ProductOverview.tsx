@@ -1,5 +1,6 @@
 
-import { Box } from "lucide-react";
+import { Box, Check } from "lucide-react";
+import { Button } from "@/components/ui/button";
 
 const ProductOverview = () => {
   return (
