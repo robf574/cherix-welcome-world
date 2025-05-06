@@ -11,16 +11,16 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-bold gradient-text">CheriX</a>
+            <a href="#" className="text-2xl font-bold text-core-red">CheriX</a>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-600 hover:text-primary transition-colors">Features</a>
-            <a href="#how-it-works" className="text-gray-600 hover:text-primary transition-colors">How It Works</a>
-            <a href="#testimonials" className="text-gray-600 hover:text-primary transition-colors">Testimonials</a>
-            <a href="#contact" className="text-gray-600 hover:text-primary transition-colors">Contact</a>
-            <Button className="bg-primary hover:bg-primary/90 text-white">Get Started</Button>
+            <a href="#features" className="text-gray-600 hover:text-core-red transition-colors">Features</a>
+            <a href="#how-it-works" className="text-gray-600 hover:text-core-red transition-colors">How It Works</a>
+            <a href="#testimonials" className="text-gray-600 hover:text-core-red transition-colors">Testimonials</a>
+            <a href="#contact" className="text-gray-600 hover:text-core-red transition-colors">Contact</a>
+            <Button className="bg-core-red hover:bg-secondary-red text-white">Get Started</Button>
           </div>
           
           {/* Mobile Navigation Button */}
@@ -39,33 +39,33 @@ const Navbar = () => {
           <div className="md:hidden pt-4 pb-6 space-y-4">
             <a 
               href="#features" 
-              className="block py-2 text-gray-600 hover:text-primary"
+              className="block py-2 text-gray-600 hover:text-core-red"
               onClick={() => setIsOpen(false)}
             >
               Features
             </a>
             <a 
               href="#how-it-works" 
-              className="block py-2 text-gray-600 hover:text-primary"
+              className="block py-2 text-gray-600 hover:text-core-red"
               onClick={() => setIsOpen(false)}
             >
               How It Works
             </a>
             <a 
               href="#testimonials" 
-              className="block py-2 text-gray-600 hover:text-primary" 
+              className="block py-2 text-gray-600 hover:text-core-red" 
               onClick={() => setIsOpen(false)}
             >
               Testimonials
             </a>
             <a 
               href="#contact" 
-              className="block py-2 text-gray-600 hover:text-primary"
+              className="block py-2 text-gray-600 hover:text-core-red"
               onClick={() => setIsOpen(false)}
             >
               Contact
             </a>
-            <Button className="w-full bg-primary hover:bg-primary/90 text-white">
+            <Button className="w-full bg-core-red hover:bg-secondary-red text-white">
               Get Started
             </Button>
           </div>

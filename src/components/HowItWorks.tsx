@@ -5,7 +5,7 @@ const Step = ({ number, title, description }: {
   description: string 
 }) => (
   <div className="flex flex-col items-center md:items-start text-center md:text-left">
-    <div className="bg-primary text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
+    <div className="bg-core-red text-white w-12 h-12 rounded-full flex items-center justify-center text-xl font-bold mb-4">
       {number}
     </div>
     <h3 className="text-xl font-bold mb-2">{title}</h3>
@@ -48,7 +48,7 @@ const HowItWorks = () => {
         <div className="relative">
           {/* Connection Line (Desktop) */}
           <div className="hidden md:block absolute top-6 left-[10%] right-[10%] h-0.5 bg-gray-200">
-            <div className="absolute top-0 left-0 h-full w-1/2 bg-primary" style={{ width: "30%" }}></div>
+            <div className="absolute top-0 left-0 h-full bg-core-red" style={{ width: "30%" }}></div>
           </div>
           
           <div className="grid grid-cols-1 md:grid-cols-4 gap-8 md:gap-12 relative z-10">

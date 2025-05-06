@@ -14,10 +14,10 @@ const Hero = () => {
               CheriX helps businesses create seamless digital experiences that engage customers and drive growth.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-primary hover:bg-primary/90 text-white px-8 py-6 text-lg">
+              <Button className="bg-core-red hover:bg-secondary-red text-white px-8 py-6 text-lg">
                 Get Started
               </Button>
-              <Button variant="outline" className="border-primary text-primary hover:bg-primary/5 px-8 py-6 text-lg">
+              <Button variant="outline" className="border-core-red text-core-red hover:bg-core-red/5 px-8 py-6 text-lg">
                 Learn More
               </Button>
             </div>

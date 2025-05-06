@@ -7,8 +7,8 @@ const FeatureCard = ({ icon: Icon, title, description }: {
   description: string 
 }) => (
   <div className="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition-shadow border border-gray-100">
-    <div className="bg-accent w-14 h-14 rounded-lg flex items-center justify-center mb-6">
-      <Icon className="text-secondary" size={24} />
+    <div className="bg-accent/10 w-14 h-14 rounded-lg flex items-center justify-center mb-6">
+      <Icon className="text-accent-green" size={24} />
     </div>
     <h3 className="text-xl font-bold mb-3">{title}</h3>
     <p className="text-gray-600">{description}</p>

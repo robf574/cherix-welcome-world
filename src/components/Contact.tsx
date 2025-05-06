@@ -12,8 +12,8 @@ const ContactInfo = ({ icon: Icon, title, content }: {
   content: string | React.ReactNode
 }) => (
   <div className="flex items-start">
-    <div className="mr-4 p-2 bg-accent rounded-full">
-      <Icon className="text-primary h-5 w-5" />
+    <div className="mr-4 p-2 bg-accent-green/10 rounded-full">
+      <Icon className="text-accent-green h-5 w-5" />
     </div>
     <div>
       <h4 className="font-medium text-gray-900">{title}</h4>
@@ -76,12 +76,12 @@ const Contact = () => {
               <ContactInfo 
                 icon={Mail}
                 title="Email"
-                content={<a href="mailto:info@cherix.com" className="hover:text-primary">info@cherix.com</a>}
+                content={<a href="mailto:info@cherix.com" className="hover:text-core-red">info@cherix.com</a>}
               />
               <ContactInfo 
                 icon={Phone}
                 title="Phone"
-                content={<a href="tel:+12345678901" className="hover:text-primary">+1 (234) 567-8901</a>}
+                content={<a href="tel:+12345678901" className="hover:text-core-red">+1 (234) 567-8901</a>}
               />
               <ContactInfo 
                 icon={MapPin}
@@ -93,7 +93,7 @@ const Contact = () => {
               />
             </div>
             
-            <div className="bg-accent p-6 rounded-lg">
+            <div className="bg-accent-green/10 p-6 rounded-lg">
               <h4 className="font-bold mb-2">Business Hours</h4>
               <p className="text-gray-700">
                 Monday - Friday: 9AM - 6PM<br />
@@ -153,7 +153,7 @@ const Contact = () => {
               
               <Button 
                 type="submit" 
-                className="w-full bg-primary hover:bg-primary/90"
+                className="w-full bg-core-red hover:bg-secondary-red"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Sending..." : "Send Message"}

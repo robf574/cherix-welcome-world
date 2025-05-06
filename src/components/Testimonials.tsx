@@ -14,7 +14,7 @@ const TestimonialCard = ({ quote, name, title, company, avatarUrl, initials }: T
   return (
     <div className="bg-white p-8 rounded-xl shadow-md border border-gray-100">
       <div className="mb-6">
-        <svg width="45" height="36" viewBox="0 0 45 36" className="text-primary/20">
+        <svg width="45" height="36" viewBox="0 0 45 36" className="text-core-red/20">
           <path 
             fill="currentColor" 
             d="M13.415.43c-2.523-.21-4.694.62-6.513 2.492C4.606 5.198 4.1 6.78 4.205 8.78c1.16 0 5.82.113 6.727 6.544.102.727-1.02 5.32-7.472 8.085L0 19.285c3.419-6.05 5.13-12.52 5.13-19.414V.466c2.842-.623 5.347-.727 8.285-.036zM38.374.43c-2.523-.21-4.694.62-6.513 2.492-2.296 2.276-2.802 3.858-2.697 5.858 1.16 0 5.82.113 6.727 6.544.102.727-1.02 5.32-7.472 8.085l-3.46-4.124c3.419-6.05 5.13-12.52 5.13-19.414V.466c2.842-.623 5.347-.727 8.285-.036z" 
