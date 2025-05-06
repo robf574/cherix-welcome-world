@@ -1,5 +1,5 @@
 
-import { Box, Check } from "lucide-react";
+import { Box, Check, MessageSquare, FileText, Shield } from "lucide-react";
 import { Button } from "@/components/ui/button";
 
 const ProductOverview = () => {
@@ -8,10 +8,10 @@ const ProductOverview = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
-            Introducing <span className="gradient-text">CheriX</span>
+            Introducing <span className="gradient-text">RiskCherry Assistant</span>
           </h2>
           <p className="text-lg text-white/90 max-w-2xl mx-auto">
-            Our groundbreaking GPT-based assistant revolutionizing gambling certification processes.
+            Our GPT-based assistant revolutionizing online gambling certification and compliance processes.
           </p>
         </div>
         
@@ -20,7 +20,7 @@ const ProductOverview = () => {
             <div className="bg-white p-6 rounded-xl shadow-xl">
               <img 
                 src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
-                alt="CheriX AI Assistant" 
+                alt="RiskCherry AI Assistant" 
                 className="rounded-lg w-full"
               />
               <div className="absolute top-4 left-4 bg-accent-green text-white px-4 py-2 rounded-full font-medium">
@@ -32,12 +32,12 @@ const ProductOverview = () => {
           <div className="lg:w-1/2 fade-in" style={{ animationDelay: "0.2s" }}>
             <div className="flex items-start mb-8">
               <div className="bg-accent-green/10 p-4 rounded-full mr-4">
-                <Box className="text-accent-green" size={24} />
+                <MessageSquare className="text-accent-green" size={24} />
               </div>
               <div>
-                <h3 className="text-2xl font-bold mb-2 text-white">CheriX Assistant</h3>
+                <h3 className="text-2xl font-bold mb-2 text-white">Superhuman Assistant</h3>
                 <p className="text-lg text-white/90">
-                  Our proprietary AI solution that automates and enhances the certification process for online gambling platforms.
+                  Acts as your dedicated Tech Account Manager and Tech Compliance Manager, providing instant, tailored advice on certification and audits.
                 </p>
               </div>
             </div>
@@ -50,19 +50,25 @@ const ProductOverview = () => {
                     <span className="bg-accent-green text-white p-1 rounded-full mr-3">
                       <Check size={16} />
                     </span>
-                    Automated source code review with 99.7% accuracy
+                    Automated technical onboarding and document management
                   </li>
                   <li className="flex items-center text-white/90">
                     <span className="bg-accent-green text-white p-1 rounded-full mr-3">
                       <Check size={16} />
                     </span>
-                    RNG testing and certification in half the industry standard time
+                    Real-time certification queries and market compliance guidance
                   </li>
                   <li className="flex items-center text-white/90">
                     <span className="bg-accent-green text-white p-1 rounded-full mr-3">
                       <Check size={16} />
                     </span>
-                    Comprehensive market research and regulatory compliance reports
+                    Seamless integration with RiskCherry Portal and Slack
+                  </li>
+                  <li className="flex items-center text-white/90">
+                    <span className="bg-accent-green text-white p-1 rounded-full mr-3">
+                      <Check size={16} />
+                    </span>
+                    Proactive regulatory updates and personalized alerts
                   </li>
                 </ul>
               </div>
