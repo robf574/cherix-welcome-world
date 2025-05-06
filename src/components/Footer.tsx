@@ -7,9 +7,9 @@ const Footer = () => {
       <div className="container mx-auto py-12 px-4">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8 mb-8">
           <div>
-            <h3 className="text-xl font-bold mb-4 text-core-red">CheriX</h3>
+            <h3 className="text-xl font-bold mb-4 text-core-red">RiskCherry</h3>
             <p className="text-gray-300 mb-4">
-              Transforming digital experiences for businesses worldwide.
+              Innovative certification solutions for online gambling platforms worldwide.
             </p>
             <div className="flex space-x-4">
               <a href="#" className="text-gray-300 hover:text-core-red transition-colors">
@@ -36,20 +36,20 @@ const Footer = () => {
           <div>
             <h4 className="text-lg font-semibold mb-4">Company</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">About Us</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">Our Team</a></li>
+              <li><a href="#about" className="text-gray-300 hover:text-core-red transition-colors">About Us</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">Leadership</a></li>
               <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">Careers</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">Press</a></li>
+              <li><a href="#compliance" className="text-gray-300 hover:text-core-red transition-colors">Accreditations</a></li>
             </ul>
           </div>
           
           <div>
             <h4 className="text-lg font-semibold mb-4">Services</h4>
             <ul className="space-y-2">
-              <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">Digital Strategy</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">Web Development</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">UX/UI Design</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">Analytics</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-core-red transition-colors">RNG Certification</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-core-red transition-colors">Source Code Review</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-core-red transition-colors">Compliance Solutions</a></li>
+              <li><a href="#services" className="text-gray-300 hover:text-core-red transition-colors">Market Research</a></li>
             </ul>
           </div>
           
@@ -59,14 +59,14 @@ const Footer = () => {
               <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">Privacy Policy</a></li>
               <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">Terms of Service</a></li>
               <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">Cookie Policy</a></li>
-              <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">GDPR Compliance</a></li>
+              <li><a href="#" className="text-gray-300 hover:text-core-red transition-colors">Data Protection</a></li>
             </ul>
           </div>
         </div>
         
         <div className="border-t border-gray-700 pt-8">
           <p className="text-gray-400 text-center">
-            © {currentYear} CheriX. All rights reserved.
+            © {currentYear} RiskCherry. All rights reserved. Certified for excellence in gambling compliance.
           </p>
         </div>
       </div>

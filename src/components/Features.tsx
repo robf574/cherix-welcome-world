@@ -1,4 +1,5 @@
-import { Check, Star, Users, Code } from "lucide-react";
+
+import { Shield, Code, Search, Check } from "lucide-react";
 
 const FeatureCard = ({ icon: Icon, title, description }: { 
   icon: React.ElementType, 
@@ -17,24 +18,24 @@ const FeatureCard = ({ icon: Icon, title, description }: {
 const Features = () => {
   const features = [
     {
-      icon: Check,
-      title: "Quality Assurance",
-      description: "Our robust testing framework ensures your digital products meet the highest standards."
-    },
-    {
-      icon: Star,
-      title: "Premium Experience",
-      description: "Create exceptional user experiences that keep your customers coming back."
-    },
-    {
-      icon: Users,
-      title: "Team Collaboration",
-      description: "Connect your teams with integrated tools that boost productivity."
+      icon: Shield,
+      title: "RNG Certification",
+      description: "Our advanced testing ensures your random number generators meet strict industry standards."
     },
     {
       icon: Code,
-      title: "Advanced Technology",
-      description: "Built with cutting-edge technologies to future-proof your digital presence."
+      title: "Source Code Review",
+      description: "We thoroughly analyze your gambling platform's code to identify vulnerabilities and ensure fairness."
+    },
+    {
+      icon: Search,
+      title: "Market Research",
+      description: "Access comprehensive insights on regulatory requirements and market entry strategies."
+    },
+    {
+      icon: Check,
+      title: "Compliance Solutions",
+      description: "Stay ahead with our complete suite of certification services for global gambling regulations."
     }
   ];
 
@@ -43,10 +44,10 @@ const Features = () => {
       <div className="container mx-auto">
         <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
-            Features Designed for <span className="gradient-text">Success</span>
+            Certification <span className="gradient-text">Services</span>
           </h2>
           <p className="text-lg text-white/90 max-w-2xl mx-auto">
-            CheriX provides the tools and features you need to excel in today's competitive digital landscape.
+            RiskCherry provides comprehensive certification solutions to ensure your gambling platform meets global standards.
           </p>
         </div>
         

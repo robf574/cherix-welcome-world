@@ -11,16 +11,18 @@ const Navbar = () => {
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-bold text-core-red">CheriX</a>
+            <a href="#" className="text-2xl font-bold text-core-red">RiskCherry</a>
           </div>
           
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
-            <a href="#features" className="text-gray-600 hover:text-core-red transition-colors">Features</a>
-            <a href="#how-it-works" className="text-gray-600 hover:text-core-red transition-colors">How It Works</a>
-            <a href="#testimonials" className="text-gray-600 hover:text-core-red transition-colors">Testimonials</a>
+            <a href="#about" className="text-gray-600 hover:text-core-red transition-colors">About</a>
+            <a href="#features" className="text-gray-600 hover:text-core-red transition-colors">Services</a>
+            <a href="#product" className="text-gray-600 hover:text-core-red transition-colors">CheriX</a>
+            <a href="#case-studies" className="text-gray-600 hover:text-core-red transition-colors">Case Studies</a>
+            <a href="#resources" className="text-gray-600 hover:text-core-red transition-colors">Resources</a>
             <a href="#contact" className="text-gray-600 hover:text-core-red transition-colors">Contact</a>
-            <Button className="bg-core-red hover:bg-secondary-red text-white">Get Started</Button>
+            <Button className="bg-core-red hover:bg-secondary-red text-white">Get Certified</Button>
           </div>
           
           {/* Mobile Navigation Button */}
@@ -38,25 +40,39 @@ const Navbar = () => {
         {isOpen && (
           <div className="md:hidden pt-4 pb-6 space-y-4">
             <a 
+              href="#about" 
+              className="block py-2 text-gray-600 hover:text-core-red"
+              onClick={() => setIsOpen(false)}
+            >
+              About
+            </a>
+            <a 
               href="#features" 
               className="block py-2 text-gray-600 hover:text-core-red"
               onClick={() => setIsOpen(false)}
             >
-              Features
+              Services
             </a>
             <a 
-              href="#how-it-works" 
+              href="#product" 
               className="block py-2 text-gray-600 hover:text-core-red"
               onClick={() => setIsOpen(false)}
             >
-              How It Works
+              CheriX
             </a>
             <a 
-              href="#testimonials" 
+              href="#case-studies" 
               className="block py-2 text-gray-600 hover:text-core-red" 
               onClick={() => setIsOpen(false)}
             >
-              Testimonials
+              Case Studies
+            </a>
+            <a 
+              href="#resources" 
+              className="block py-2 text-gray-600 hover:text-core-red" 
+              onClick={() => setIsOpen(false)}
+            >
+              Resources
             </a>
             <a 
               href="#contact" 
@@ -66,7 +82,7 @@ const Navbar = () => {
               Contact
             </a>
             <Button className="w-full bg-core-red hover:bg-secondary-red text-white">
-              Get Started
+              Get Certified
             </Button>
           </div>
         )}

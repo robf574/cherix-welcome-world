@@ -1,0 +1,80 @@
+
+import { Box } from "lucide-react";
+
+const ProductOverview = () => {
+  return (
+    <section id="product" className="section-padding bg-white/10 backdrop-blur-sm">
+      <div className="container mx-auto">
+        <div className="text-center mb-16">
+          <h2 className="text-3xl md:text-4xl font-bold mb-4 text-white">
+            Introducing <span className="gradient-text">CheriX</span>
+          </h2>
+          <p className="text-lg text-white/90 max-w-2xl mx-auto">
+            Our groundbreaking GPT-based assistant revolutionizing gambling certification processes.
+          </p>
+        </div>
+        
+        <div className="flex flex-col lg:flex-row items-center gap-12">
+          <div className="lg:w-1/2 relative fade-in">
+            <div className="bg-white p-6 rounded-xl shadow-xl">
+              <img 
+                src="https://images.unsplash.com/photo-1487058792275-0ad4aaf24ca7" 
+                alt="CheriX AI Assistant" 
+                className="rounded-lg w-full"
+              />
+              <div className="absolute top-4 left-4 bg-accent-green text-white px-4 py-2 rounded-full font-medium">
+                AI-Powered
+              </div>
+            </div>
+          </div>
+          
+          <div className="lg:w-1/2 fade-in" style={{ animationDelay: "0.2s" }}>
+            <div className="flex items-start mb-8">
+              <div className="bg-accent-green/10 p-4 rounded-full mr-4">
+                <Box className="text-accent-green" size={24} />
+              </div>
+              <div>
+                <h3 className="text-2xl font-bold mb-2 text-white">CheriX Assistant</h3>
+                <p className="text-lg text-white/90">
+                  Our proprietary AI solution that automates and enhances the certification process for online gambling platforms.
+                </p>
+              </div>
+            </div>
+            
+            <div className="space-y-6 mb-8">
+              <div className="bg-white/20 p-6 rounded-lg">
+                <h4 className="text-xl font-semibold mb-3 text-white">Key Capabilities</h4>
+                <ul className="space-y-3">
+                  <li className="flex items-center text-white/90">
+                    <span className="bg-accent-green text-white p-1 rounded-full mr-3">
+                      <Check size={16} />
+                    </span>
+                    Automated source code review with 99.7% accuracy
+                  </li>
+                  <li className="flex items-center text-white/90">
+                    <span className="bg-accent-green text-white p-1 rounded-full mr-3">
+                      <Check size={16} />
+                    </span>
+                    RNG testing and certification in half the industry standard time
+                  </li>
+                  <li className="flex items-center text-white/90">
+                    <span className="bg-accent-green text-white p-1 rounded-full mr-3">
+                      <Check size={16} />
+                    </span>
+                    Comprehensive market research and regulatory compliance reports
+                  </li>
+                </ul>
+              </div>
+            </div>
+            
+            <Button className="bg-accent-green hover:bg-accent-green/90 text-white px-6 py-4 text-lg">
+              Request Demo
+            </Button>
+          </div>
+        </div>
+      </div>
+    </section>
+  );
+};
+
+export default ProductOverview;

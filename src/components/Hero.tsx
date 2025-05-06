@@ -8,14 +8,14 @@ const Hero = () => {
         <div className="flex flex-col md:flex-row items-center">
           <div className="md:w-1/2 mb-10 md:mb-0 fade-in">
             <h1 className="text-4xl md:text-5xl lg:text-6xl font-bold mb-6 text-white">
-              <span className="gradient-text">Transform</span> Your Digital Experience
+              <span className="gradient-text">Trusted</span> Gambling Certification
             </h1>
             <p className="text-lg md:text-xl text-white/90 mb-8 max-w-lg">
-              CheriX helps businesses create seamless digital experiences that engage customers and drive growth.
+              RiskCherry delivers innovative certification solutions for online gambling platforms, ensuring trust, compliance, and excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
               <Button className="bg-white hover:bg-white/90 text-core-red px-8 py-6 text-lg">
-                Get Started
+                Get Certified
               </Button>
               <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">
                 Learn More
@@ -28,8 +28,8 @@ const Hero = () => {
               <div className="absolute -bottom-8 -right-8 w-40 h-40 bg-white/30 rounded-full opacity-50 blur-2xl"></div>
               <div className="relative bg-white p-4 rounded-2xl shadow-xl border border-gray-100">
                 <img 
-                  src="https://images.unsplash.com/photo-1488590528505-98d2b5aba04b?auto=format&fit=crop&w=800&q=80" 
-                  alt="Digital Experience Platform" 
+                  src="https://images.unsplash.com/photo-1461749280684-dccba630e2f6" 
+                  alt="Online Gambling Certification" 
                   className="w-full h-auto rounded-xl"
                 />
               </div>

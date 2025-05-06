@@ -3,8 +3,8 @@ import { useState } from "react";
 import { Button } from "@/components/ui/button";
 import { Input } from "@/components/ui/input";
 import { Textarea } from "@/components/ui/textarea";
-import { useToast } from "@/components/ui/use-toast";
-import { Mail, MapPin, Phone } from "lucide-react";
+import { useToast } from "@/hooks/use-toast";
+import { Mail, MapPin, Phone, MessageSquare } from "lucide-react";
 
 const ContactInfo = ({ icon: Icon, title, content }: {
   icon: React.ElementType,
@@ -27,11 +27,13 @@ const Contact = () => {
   const [formData, setFormData] = useState({
     name: "",
     email: "",
+    company: "",
+    service: "",
     message: ""
   });
   const [isSubmitting, setIsSubmitting] = useState(false);
 
-  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement>) => {
+  const handleChange = (e: React.ChangeEvent<HTMLInputElement | HTMLTextAreaElement | HTMLSelectElement>) => {
     const { name, value } = e.target;
     setFormData(prev => ({ ...prev, [name]: value }));
   };
@@ -43,14 +45,16 @@ const Contact = () => {
     // Simulate form submission
     setTimeout(() => {
       toast({
-        title: "Message sent!",
-        description: "We'll get back to you as soon as possible.",
+        title: "Inquiry received!",
+        description: "Our certification experts will contact you within 24 hours.",
         duration: 5000
       });
       
       setFormData({
         name: "",
         email: "",
+        company: "",
+        service: "",
         message: ""
       });
       setIsSubmitting(false);
@@ -61,11 +65,14 @@ const Contact = () => {
     <section id="contact" className="section-padding">
       <div className="container mx-auto">
         <div className="text-center mb-16">
+          <div className="inline-flex items-center justify-center bg-white/20 p-3 rounded-full mb-4">
+            <MessageSquare className="text-white" size={28} />
+          </div>
           <h2 className="text-3xl md:text-4xl font-bold text-white mb-4">
             Get in <span className="gradient-text">Touch</span>
           </h2>
           <p className="text-lg text-white/90 max-w-2xl mx-auto">
-            Have questions or ready to get started? Reach out to our team.
+            Ready to ensure your gambling platform meets the highest standards? Reach out to our certification experts.
           </p>
         </div>
         
@@ -76,7 +83,7 @@ const Contact = () => {
               <ContactInfo 
                 icon={Mail}
                 title="Email"
-                content={<a href="mailto:info@cherix.com" className="hover:text-white/70">info@cherix.com</a>}
+                content={<a href="mailto:certification@riskcherry.com" className="hover:text-white/70">certification@riskcherry.com</a>}
               />
               <ContactInfo 
                 icon={Phone}
@@ -87,18 +94,17 @@ const Contact = () => {
                 icon={MapPin}
                 title="Address"
                 content={<>
-                  123 Innovation Way<br />
-                  Tech District, CA 90210
+                  123 Certification Avenue<br />
+                  Gaming District, NV 89109
                 </>}
               />
             </div>
             
             <div className="bg-white/10 p-6 rounded-lg">
-              <h4 className="font-bold text-white mb-2">Business Hours</h4>
+              <h4 className="font-bold text-white mb-2">Certification Hours</h4>
               <p className="text-white/80">
-                Monday - Friday: 9AM - 6PM<br />
-                Saturday: 10AM - 4PM<br />
-                Sunday: Closed
+                Monday - Friday: 9AM - 6PM (GMT)<br />
+                24/7 Emergency Support Available
               </p>
             </div>
           </div>
@@ -107,7 +113,7 @@ const Contact = () => {
             <form onSubmit={handleSubmit} className="space-y-6">
               <div>
                 <label htmlFor="name" className="block text-sm font-medium text-white mb-1">
-                  Full Name
+                  Full Name*
                 </label>
                 <Input
                   id="name"
@@ -122,7 +128,7 @@ const Contact = () => {
               
               <div>
                 <label htmlFor="email" className="block text-sm font-medium text-white mb-1">
-                  Email Address
+                  Email Address*
                 </label>
                 <Input
                   id="email"
@@ -137,15 +143,51 @@ const Contact = () => {
               </div>
               
               <div>
+                <label htmlFor="company" className="block text-sm font-medium text-white mb-1">
+                  Company Name*
+                </label>
+                <Input
+                  id="company"
+                  name="company"
+                  value={formData.company}
+                  onChange={handleChange}
+                  placeholder="Your company"
+                  required
+                  className="w-full bg-white/20 border-white/30 placeholder:text-white/50 text-white"
+                />
+              </div>
+              
+              <div>
+                <label htmlFor="service" className="block text-sm font-medium text-white mb-1">
+                  Service Interested In*
+                </label>
+                <select
+                  id="service"
+                  name="service"
+                  value={formData.service}
+                  onChange={handleChange}
+                  required
+                  className="w-full bg-white/20 border-white/30 text-white rounded-md h-10 px-3"
+                >
+                  <option value="" disabled className="bg-gray-900">Select a service</option>
+                  <option value="RNG Testing" className="bg-gray-900">RNG Testing</option>
+                  <option value="Source Code Review" className="bg-gray-900">Source Code Review</option>
+                  <option value="Compliance Certification" className="bg-gray-900">Compliance Certification</option>
+                  <option value="Market Entry Research" className="bg-gray-900">Market Entry Research</option>
+                  <option value="Other" className="bg-gray-900">Other</option>
+                </select>
+              </div>
+              
+              <div>
                 <label htmlFor="message" className="block text-sm font-medium text-white mb-1">
-                  Message
+                  Message*
                 </label>
                 <Textarea
                   id="message"
                   name="message"
                   value={formData.message}
                   onChange={handleChange}
-                  placeholder="How can we help you?"
+                  placeholder="Tell us about your certification needs"
                   required
                   className="min-h-[120px] w-full bg-white/20 border-white/30 placeholder:text-white/50 text-white"
                 />
@@ -156,7 +198,7 @@ const Contact = () => {
                 className="w-full bg-white hover:bg-white/90 text-core-red"
                 disabled={isSubmitting}
               >
-                {isSubmitting ? "Sending..." : "Send Message"}
+                {isSubmitting ? "Submitting..." : "Submit Inquiry"}
               </Button>
             </form>
           </div>
