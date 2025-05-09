@@ -28,7 +28,7 @@ const Navbar = () => {
             <a href="#case-studies" className="text-gray-600 hover:text-core-red transition-colors">Case Studies</a>
             <a href="#resources" className="text-gray-600 hover:text-core-red transition-colors">Resources</a>
             <a href="#contact" className="text-gray-600 hover:text-core-red transition-colors">Contact</a>
-            <Button className="bg-core-red hover:bg-secondary-red text-white">Get Certified</Button>
+            <Button className="bg-accent-green hover:bg-accent-green/90 text-white">Get Certified</Button>
           </div>
           
           {/* Mobile Navigation Button */}
@@ -87,7 +87,7 @@ const Navbar = () => {
             >
               Contact
             </a>
-            <Button className="w-full bg-core-red hover:bg-secondary-red text-white">
+            <Button className="w-full bg-accent-green hover:bg-accent-green/90 text-white">
               Get Certified
             </Button>
           </div>

@@ -14,7 +14,7 @@ const Hero = () => {
               RiskCherry delivers innovative certification solutions for online gambling platforms, ensuring trust, compliance, and excellence.
             </p>
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button className="bg-white hover:bg-white/90 text-core-red px-8 py-6 text-lg">
+              <Button className="bg-accent-green hover:bg-accent-green/90 text-white px-8 py-6 text-lg">
                 Get Certified
               </Button>
               <Button variant="outline" className="border-white text-white hover:bg-white/10 px-8 py-6 text-lg">

@@ -195,7 +195,7 @@ const Contact = () => {
               
               <Button 
                 type="submit" 
-                className="w-full bg-white hover:bg-white/90 text-core-red"
+                className="w-full bg-accent-green hover:bg-accent-green/90 text-white"
                 disabled={isSubmitting}
               >
                 {isSubmitting ? "Submitting..." : "Submit Inquiry"}

@@ -24,7 +24,7 @@ const AboutUs = () => {
             <p className="text-lg text-white/90 mb-8">
               Our mission is to elevate industry standards through rigorous testing methodologies and cutting-edge technology, ensuring fairness and compliance for players and operators worldwide.
             </p>
-            <Button className="bg-white hover:bg-white/90 text-core-red px-6 py-4 text-lg">
+            <Button className="bg-accent-green hover:bg-accent-green/90 text-white px-6 py-4 text-lg">
               Meet Our Team
             </Button>
           </div>
