@@ -8,10 +8,16 @@ const Navbar = () => {
 
   return (
     <nav className="fixed top-0 left-0 right-0 z-50 bg-white/90 backdrop-blur-md shadow-sm">
-      <div className="container mx-auto px-4 py-4">
+      <div className="container mx-auto px-4 py-2">
         <div className="flex items-center justify-between">
           <div className="flex items-center">
-            <a href="#" className="text-2xl font-bold text-core-red">RiskCherry</a>
+            <a href="#" className="flex items-center">
+              <img 
+                src="/lovable-uploads/5d42f67f-a1c2-4e51-b2ea-15b37e6831e2.png" 
+                alt="RiskCherry Logo" 
+                className="h-12 mr-2" 
+              />
+            </a>
           </div>
           
           {/* Desktop Navigation */}
