@@ -27,8 +27,8 @@ const Compliance = () => {
       icon: ShieldCheck
     },
     {
-      title: "GLI-19 Compliant",
-      description: "We adhere to Gaming Laboratories International standards for interactive gaming systems.",
+      title: "GDPR Compliant",
+      description: "We follow strict data protection and privacy practices in line with European Union regulations.",
       icon: Shield
     },
     {
@@ -42,8 +42,8 @@ const Compliance = () => {
       icon: ShieldCheck
     },
     {
-      title: "eCOGRA Partner",
-      description: "Working in partnership with eCOGRA to promote fair gaming and player protection standards.",
+      title: "SOC 2 Type II",
+      description: "Independently verified to meet Trust Services Criteria for security, availability, and confidentiality.",
       icon: Shield
     },
     {
